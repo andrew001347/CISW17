@@ -7,7 +7,7 @@
 <!--
    Andrew Kim
    2 - Lesson Notes
-   9/ / 24
+   9/9/24
 -->
 </head>
 <body>
@@ -27,8 +27,15 @@
     <h2> Summary for Lesson 2 </h2>
         <p>CSS, aka Cascading Style Sheets, allows you to take control of how you want to display your web content. It is a language that defines 
             style constructs such as fonts, colors, and positioning. CSS can be stored directly into an HTML file or 
-            in a completely separate file using the .css file extension. An important thing to remember is that styles may be overwritten when a 
-            specific style is implemented to the elements. 
+            in a completely separate file using the .css file extension. An important thing to remember is that more specific styles can override 
+            more general styles. For example, if an element has both a general style applied to it and a more specific style (like an inline style or 
+            a class), the more specific style will take precedence and override the general style.</p>
+
+        <p> You can write css by starting off the tag you want to manipulate. body { } and inside the { } you can type out the many different properties.
+            (EX: font-size: 10pt;) Make sure to end every properties with ;. This indicates the end of the style. You can place CSS properties 3 ways.
+            In a style tag on the html page, inline with the element, or as a separate file using the link tag. As stated earlier, CSS properties can be
+            within the HTML file itself, but it can also be in a different file. You can do this be creating a link to the HTML document from the CSS file.
+            <link rel="stylesheet" href="styles.css"> This link must be placed in the head tag of the HTML file.
         </p>
 
         <p>Layout properties: Properties that affect the positioning of elements on a web page, such as margins, padding, and alignment.</p>
@@ -67,9 +74,16 @@
             <li>hidden—Effectively the same as none</li>
         </ul>
         
-        <p>CSS Class</p>
-        <p>CSS ID</p>
+        <p>CSS Class is a custom set of formatting specifications that can be applied to any element in a web page. CSS classes are defined with a dot (.) 
+            and are meant to be reusable. EX: h1.silly { font: 36pt Comic Sans; } h1.serious { font: 36pt Arial; } </p>
+        <p> h1 class="silly">Marvin's Munchies Inc. This will inherit the h1.silly rules</p>
+        <p> h1 class="serious">MMI Investor Information This will inherit the h1.serious rules</p>
 
+        <p>CSS ID is a custom set of formatting specifications that can be applied to only one element in a web page. You can use IDs across a set of 
+            pages—but only once within each page. They are meant to be unique and only used once. CSS ID are defined with a hashtag(#)
+            EX: #title {font: 24pt Verdana, Geneva, Arial, sans-serif} </p>
+        <p> p id="title">Some Title Goes Here</p>   
+        
 </body>
 </html>
 
