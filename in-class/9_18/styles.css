@@ -1,0 +1,68 @@
+body{
+    margin :0 auto;
+    max-width: 600px;
+    font-size: 20px;
+    font-family: Lato;
+}
+
+
+h1{
+  font-family: "Space Grotesk";
+  text-align: center;
+  font-size: 3em;
+}
+
+pre{
+  background-color: lightyellow;
+  padding: 0;
+}
+
+code{
+  color: rgb(55, 240, 55);
+}
+
+ol{
+  list-style-type: none;
+}
+
+ ol a{
+  display: block;
+  text-decoration: none;
+  background-color: cornsilk;
+  
+}
+
+ol li{
+  padding: 10px 0;
+  
+}
+
+ol a:hover{
+  color:rgb(217, 255, 0);
+  background-color: violet;
+}
+
+ol a:visited{
+  color: chocolate;
+}
+
+
+.leet_coder{
+  background-color: black;
+}
+
+p{
+  text-align: justify;
+}
+
+.emoji{
+  font-size: 500%;
+  text-align: center;
+}
+
+#spacer{
+  height: 800px;
+}
+
+
+
