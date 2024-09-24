@@ -118,7 +118,78 @@
       </ul>
 
     <h2> Summary for Lesson 8 </h2>  
-    <p></p>
+    <p>When picking colors to put in your web, be sure to use colors judiciously and with respect. This means being aware of culturally sensitive colors. Other things to consider is 
+        the use a natural palette of colors, using accessible color combinations, using colors with good contrast, especially for blocks of text, using a small color palette, and considering 
+        who your audience is.  </p>
+
+        <p>There are two ways to pick your colors. You can use hexadecimals, or RGB/RGBa values. With hexadecimals, the color format is rrggbb. ff,cc,99,66,33,00
+            means full brightness, 80%, 60%, 40%, 33%, none respectively. A similar structure is followed with RGBs, but with numbers instead. 255, 204, 153, 102,
+            51, 0. Luckily, coding editors like VScode have a color picker, where we do not have to remember the color values. 
+        </p>
+        <p>When selecting images, be conscious of pixel dimensions.Most people accessing the web now have a computer with a screen that is at least 1024 × 768 pixels in resolution, if not 
+            considerably larger. Other popular resolutions are 1440 × 900 and 1366 × 768 pixels. Always be sure to include the alt description in the image tag. It is good HTML standards to 
+            adhear to. 
+        </p>
+
+        <ul>
+            <li><strong>&lt;img&gt;</strong> — Places an image file within the page.</li>
+            
+            <li><strong>Attributes/Styles:</strong>
+              <ul>
+                <li><strong>style="background-color:color;"</strong> — Sets the background color of an element (such as &lt;body&gt;, &lt;p&gt;, &lt;div&gt;, &lt;blockquote&gt;, and other containers).</li>
+                <li><strong>style="color:color;"</strong> — Sets the color of text within an element.</li>
+                <li><strong>style="border:size type color;"</strong> — Sets the color of the four borders around an element. Border colors cannot be used without also specifying the width and type of the border.</li>
+                <li><strong>src="address"</strong> — Gives the address or filename of the image.</li>
+                <li><strong>alt="altdescription"</strong> — Provides an alternative description of the image, displayed when the image can't be viewed.</li>
+                <li><strong>title="title"</strong> — Specifies a text message that is displayed as an image title, typically in a tooltip.</li>
+                <li><strong>style="width:length;"</strong> — Specifies the width of the image (in pixels).</li>
+                <li><strong>style="height:length;"</strong> — Specifies the height of the image (in pixels).</li>
+                <li><strong>style="border:size type color;"</strong> — Removes the border around the image if it is a link.</li>
+                <li><strong>style="vertical-align:alignment;"</strong> — Aligns the image vertically to text-top, top, text-bottom, bottom, middle, or baseline.</li>
+                <li><strong>style="float:location;"</strong> — Floats the image to one side, allowing text to wrap around it. Possible values: left, right, none.</li>
+              </ul>
+            </li>
+          
+            <li><strong>&lt;map&gt;…&lt;/map&gt;</strong> — Defines a client-side image map referenced by &lt;img usemap="..."&gt;. Includes one or more &lt;area&gt; tags.</li>
+            
+            <li><strong>&lt;area&gt;</strong> — Defines a clickable link within a client-side image map.</li>
+            
+            <li><strong>Attributes/Styles:</strong>
+              <ul>
+                <li><strong>usemap="name"</strong> — Defines the name of an image map for client-side image mapping. Used with &lt;map&gt; and &lt;area&gt;.</li>
+                <li><strong>shape="value"</strong> — Specifies the shape of the clickable area within the &lt;area&gt; tag (rect, poly, circle).</li>
+                <li><strong>coords="values"</strong> — Specifies the coordinates of the clickable region within an image (varies by area type).</li>
+                <li><strong>href="linkurl"</strong> — Specifies the URL that should be loaded when the area is clicked.</li>
+              </ul>
+            </li>
+            
+            <li><strong>&lt;audio&gt;…&lt;/audio&gt;</strong> — Plays an audio file natively in the browser.</li>
+            
+            <li><strong>Attributes/Styles:</strong>
+              <ul>
+                <li><strong>src="mediaurl"</strong> — Provides the URL of the file to embed.</li>
+                <li><strong>preload="preloadtype"</strong> — Tells whether to preload the media file (none, auto, metadata).</li>
+                <li><strong>controls</strong> — Shows the audio player controls.</li>
+                <li><strong>autoplay</strong> — Plays the file automatically when it finishes loading.</li>
+                <li><strong>loop</strong> — Continuously plays the file until stopped.</li>
+              </ul>
+            </li>
+            
+            <li><strong>&lt;video&gt;…&lt;/video&gt;</strong> — Plays a video file natively in the browser.</li>
+            
+            <li><strong>Attributes/Styles:</strong>
+              <ul>
+                <li><strong>src="mediaurl"</strong> — Provides the URL of the file to embed.</li>
+                <li><strong>preload="preloadtype"</strong> — Tells whether to preload the media file (none, auto, metadata).</li>
+                <li><strong>style="width:length;"</strong> — Specifies the width of the video (in pixels).</li>
+                <li><strong>style="height:length;"</strong> — Specifies the height of the video (in pixels).</li>
+                <li><strong>controls</strong> — Shows the video player controls.</li>
+                <li><strong>autoplay</strong> — Plays the video automatically when loaded.</li>
+                <li><strong>loop</strong> — Continuously plays the video until stopped.</li>
+              </ul>
+            </li>
+          </ul>
+          
 </body>
 </html>
 
