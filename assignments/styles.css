@@ -1,5 +1,50 @@
+body {
+
+   font: 20pt Verdana, Arial, Georgia, sans-serif;
+
+}
+
+ 
 a:hover {
 
-    border: 4px dashed #ffff00;
+    border: 4px dashed #ffbb00;
+    background-color: lightgray;
  
  }
+
+
+ ul li{ 
+   
+   margin-top: 20px;
+   margin-left: -20px;
+
+   border-bottom: 1px solid #868686;
+  
+ }
+
+ h2{
+   background-color: #ffbb00;
+   text-align: center;
+ }
+
+ h1, nav{
+
+   text-align: center;
+}
+
+
+#links a{
+   text-decoration: none;
+   
+   width: 100%;
+   display: inline-block;
+}
+
+
+#links a:hover{
+   text-decoration: none;
+   
+   width: 100%;
+   display: inline-block;
+   text-decoration: underline;
+}
