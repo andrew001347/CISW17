@@ -48,8 +48,43 @@
       </ul>
       
     <h2> Summary for Lesson 10 </h2>
-    <p></p>
+    <p>The CSS Box Model</p>
+    <p>Every element in HTML has a box around them. How this box is enclosed is (going outside to inside) margin, border, padding, and then the 
+      content itself. 
+    </p>
+    <ul>
+      <li>The margin is the area outside the element. It never has color; it is always transparent.</li>
+      <li>The border extends around the element, on the outer edge of any padding. The border can be of several types, widths, and colors.</li>
+      <li>The padding exists around the content and inherits the background color of the content area.</li>
+      <li>The content is surrounded by padding.</li>
+    </ul>
 
+    <p> One thing to keep in mind is that each margin,border, padding, and content will have independent width and height. Meaning, You will need to
+      take into account of the width + padding-left + padding-right + border-left + border-right + margin-left + margin-right to get the true width size.
+      The same principles apply with the height. You need to add padding-top + padding-bottom + border-top + border-bottom + margin-top + margin-bottom to 
+      get the true height.
+    </p>
+
+    <p>There is another set of properties in the CSS box model: outline properties:</p>
+    
+    <ul>
+      <li>outline-width</li>
+      <li>outline-style</li>
+      <li>outline-color</li>
+      <li>outline-offset</li>
+    </ul>
+    
+    <p>The outline properties are similar to border properties but do not affect the box model or take up space. They are useful for adding visible edges 
+      to elements without changing the layout. </p>
+    
+      <p>The box-sizing property allows us to change the padding, border, and margin. It takes in two values. The content-box and the border-box. Content-box is the 
+        default value, but we can use the border-box aka the quirks mode. Any defined padding and border are included inside the assigned width and height values.
+      </p>
+
+      <p>We can start positioning the boxes by using the position property. The position property has 4 values it can hold. Relative, absolute, fixed, and static. From 
+        these values you can assign them to be placed left, right, top, or bottom except for static. You can also control they way elements are stacked to each other by 
+        utilizing the z-index.
+      </p>
     <h2>Lesson 11: Using CSS to Do More with Lists, Text, and Navigation</h2>
     <ul>
         <li>How the CSS box model affects lists</li>
@@ -61,7 +96,18 @@
       </ul>
       
     <h2> Summary for Lesson 11 </h2>
-    <p></p>
+    <p>How the CSS Box Model Affects Lists</p>
+    <p>Although you can have list specific style types, you can change the overall list structuring by manipulating the margin, padding, color, and background-color. 
+      A cool trick to hide text but still show the properties of a link, is by offsetting the text-indent: -1000em; This will move the text way to the left of the 
+      web page. 
+    </p>
+
+    <p>Primary navigation takes users to the introductory pages of main sections of the site; secondary navigation takes users to pages within a certain section of 
+      the site. You can make them horizontal or vertial. When making list elements, it is a good idea to make a visual change to allow users to know it is a clickable 
+      element. To style lists that are nested in a list, specify which list you want to target. Example,nav ul and nav ul li would style the first level, but we can go
+      deeper by using nav ul ul and nav ul ul li to target the second list/the one nested in. 
+    </p>
+
     
 </body>
 </html>
