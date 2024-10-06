@@ -47,16 +47,34 @@
     </ul>
  <p>There are several table options on the display property:</p>
  <ul>
-    <li>table—Behaves like a &lt;table&gt; element</li>
-    <li>inline-table—Behaves like a &lt;table&gt; element that is rendered inline</li>
-    <li>table-row—Behaves like a table row (&lt;tr&gt;) element</li>
-    <li>table-cell—Behaves like a table cell (&lt;td&gt;) element</li>
-    <li>table-column—Behaves like a &lt;col&gt; element</li>
-    <li>table-caption—Behaves like a &lt;caption&gt; element</li>
-    <li>table-row-group—Behaves like a &lt;tbody&gt; element</li>
-    <li>table-header-group—Behaves like a &lt;thead&gt; element</li>
-    <li>table-footer-group—Behaves like a &lt;tfoot&gt; element</li>
-    <li>table-column-group—Behaves like a &lt;colgroup&gt; element</li>
+    <li>table — Behaves like a &lt;table&gt; element</li>
+    <li>inline-table — Behaves like a &lt;table&gt; element that is rendered inline</li>
+    <li>table-row — Behaves like a table row (&lt;tr&gt;) element</li>
+    <li>table-cell — Behaves like a table cell (&lt;td&gt;) element</li>
+    <li>table-column — Behaves like a &lt;col&gt; element</li>
+    <li>table-caption — Behaves like a &lt;caption&gt; element</li>
+    <li>table-row-group — Behaves like a &lt;tbody&gt; element</li>
+    <li>table-header-group — Behaves like a &lt;thead&gt; element</li>
+    <li>table-footer-group — Behaves like a &lt;tfoot&gt; element</li>
+    <li>table-column-group — Behaves like a &lt;colgroup&gt; element</li>
+  </ul>
+
+  <p>To build a felxible box container, you can utilize the display: felx property. You then determine what direction the elements in the 
+    container are going to flow. You use the flex-direction property with these 4 choices of values: 
+  </p>
+  <ul>
+    <li>row — The flex items flow left to right in LTR (left-to-right) layouts and right to left in RTL (right-to-left) layouts. This is the default.</li>
+    <li>row-reverse — The items flow right to left in LTR layouts and left to right in RTL layouts. This is the opposite of row.</li>
+    <li>column — Items flow from top to bottom in a column.</li>
+    <li>column-reverse — Items flow from bottom to top in a column. This is the opposite of column.</li>
+  </ul>
+  
+<p>Then you define how the items will wrap when they come up to the boundary with the flex-wrap property.  </p>
+
+<ul>
+    <li>nowrap — All flex items are on one line (horizontal or vertical). This is the default.</li>
+    <li>wrap — Flex items wrap to multiple lines from top to bottom.</li>
+    <li>wrap-reverse — Flex items wrap to multiple lines from bottom to top. This is the opposite of wrap.</li>
   </ul>
   
 
