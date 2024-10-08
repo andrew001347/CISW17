@@ -7,7 +7,7 @@
 <!--
    Andrew Kim
    6 - Lesson Notes
-   10/4/24
+   10/7/24
 -->
 </head>
 <body>
@@ -77,9 +77,12 @@
     <li>wrap-reverse — Flex items wrap to multiple lines from bottom to top. This is the opposite of wrap.</li>
   </ul>
   
+  <p>Most web pages are built using some form of grid. To use the CSS Grid Layout system, you define a container element as display: grid; and then 
+    define your columns and rows with the grid-template-columns and grid-template-rows properties. Once you have defined the grid, you place the 
+    child elements into the grid with grid-template-areas and the grid-area property. 
+</p>
 
     <h2>Lesson 13: Taking Control of Backgrounds and Borders</h2>
-
     
     <ul>
         <li>How to layer backgrounds</li>
@@ -91,8 +94,21 @@
     </ul>
 
     <h2>Summary for Lesson 13</h2>
-    <p></p>
-
+    <p>So far we only discussed changing the color of a background. However, there are many different uses for the background property. Here are some other use cases: </p>
+    <ul>
+        <li>background-image — The image used as a background.</li>
+        <li>background-position — Where the image should be placed on the element, written as a length, a percentage, or a keyword (top, bottom, center, right, and left).</li>
+        <li>background-size — The size of the image in the element, either as the width, the width and height, or a keyword (cover or contain).</li>
+        <li>background-repeat — Whether and how the image should tile in the element, using one of the values repeat, repeat-x, repeat-y, no-repeat, space, or round.</li>
+        <li>background-origin — Where the background image should start tiling; possible values are border-box, padding-box, and content-box.</li>
+        <li>background-clip — How the background should display beyond the element’s content or padding; possible values are border-box, padding-box, or content-box.</li>
+        <li>background-attachment — How the background should move relative to the viewport; possible values are scroll, fixed, or local.</li>
+        <li>background-color — The color of the background, using a color keyword or color code.</li>
+      </ul>
+      <p>Background-clip propert allows you to change what parts of the box the background covers. You can ulitze border-box, padding-box, or content-box. Another interesting
+        use of background is the use of gradients. You can use the linear gradient with background-image:linear-gradient( #ff00d5, rgba(39, 164, 0, 0.5), blue );
+      </p> 
+      
 
     <h2>Lesson 14: Using CSS Transformations and Transitions</h2>
     <ul>
