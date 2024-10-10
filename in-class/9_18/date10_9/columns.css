@@ -9,4 +9,5 @@ body{
 article{
     columns: 300px 3;
     column-gap: 30px;
+    column-rule-style: solid;
 }
