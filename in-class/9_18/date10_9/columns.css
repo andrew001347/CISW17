@@ -1,0 +1,12 @@
+body{
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article{
+    columns: 300px 3;
+    column-gap: 30px;
+}
