@@ -148,7 +148,30 @@
       </ul>
       
     <h2>Summary for Lesson 15</h2>
-    <p></p>
+    <p>There are 8 animation properties:</p>
+
+    <ul>
+      <li>animation-delay—Specifies the delay between when the element is loaded and when the animation starts.</li>
+      <li>animation-direction—Determines whether the animation should alternate direction on each sequence or start at the beginning.</li>
+      <li>animation-duration—Sets the length of time to complete one cycle of the animation.</li>
+      <li>animation-iteration-count—Configures the number of times the animation should repeat. The keyword infinite says the animation should repeat forever.</li>
+      <li>animation-name—Defines the name of the @keyframes rule to use in the animation.</li>
+      <li>animation-play-state—Allows the animation to be paused and resumed.</li>
+      <li>animation-timing-function—Defines the acceleration curves for the animation to transition through the keyframes.</li>
+      <li>animation-fill-mode—Defines the values applied to the animation before and after it executes.</li>
+    </ul>
+
+    <p>We can utilize these properties by setting up @keyframes. You start off with a from{...} clause and end with to{...}
+      The HTML canvas element allows for dynamic drawing and animation using JavaScript. To use it, you first define a <canvas> element with specified width and height, and optionally assign it an ID. CSS can add a border for visibility.
+        To draw on the canvas, you retrieve the drawing context with getContext('2d'). You can draw various shapes—like rectangles and circles—using methods such as fillRect(), strokeRect(), and arc(). Shapes can be styled with fillStyle 
+        and strokeStyle. You can also draw lines and polygons using path methods like beginPath(), moveTo(), and lineTo(). For images, you load them via JavaScript and use drawImage() to display them on the canvas.For animation, you can create 
+        sprite animations by cropping sections of a composite image and using setInterval() to update the canvas at intervals. The clearRect() method clears the canvas before each frame is drawn.
+    </p>
+
+    
+
+
+
     
 </body>
 </html>
