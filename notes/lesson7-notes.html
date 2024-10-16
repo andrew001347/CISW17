@@ -10,6 +10,29 @@
    7 - Lesson Notes
    10/15/24
 -->
+
+<style>
+  body {
+      font-size: 18px;
+      line-height: 1.5em;
+      max-width: 85%;
+      text-align: center;
+            
+      background-color: #f3f3f3;
+      color:#212427;
+      font-family: Helvetica, sans-serif, sans-serif;
+      
+    
+  }
+  h1 h2 {
+      font-weight: 400;
+  }
+
+</style>
+
+
+
+
 </head>
 <body>
 
@@ -51,6 +74,35 @@
     
     <p>Summary for Lesson 17</p>
 
+    <p>As more and more people access the web with mobile devicces, the need for good mobile design increases.
+      https://search.google.com/test/mobile-friendly this website is a tool that can help you if the web page is mobile friendly. 
+
+    </p>
+    <p>There are a few specific things that Google looks for when assessing a site for mobile friendliness:</p>
+    <ul>
+      <li>Using Flash</li>
+      <li>Configuring the viewport</li>
+      <li>Fixed-width designs</li>
+      <li>Image and other box sizes</li>
+      <li>Font sizes</li>
+      <li>Tappable elements</li>
+    </ul>
+
+    <p>Some things to consider when making a mobile-friendly site is simplifying layout/navigation, keeping download times short, and testing on real devices. 
+      Avoid using flash and utilzie animation instead. The base font should be font-size: 16px. Instead of using fixed sizes, use % and rem instead. Another thing
+      to remember is the line height. The typical line-height is 0.8 and for paragraphs it should be 1.1.  
+    </p>
+
+    <p>Desinging with mobile first design focuses on the content first. For example, a mobile customer might be more interested in the hours and location of a restaurant, 
+      while a computer user might want the menus first. It’s not that mobile customers don’t want the menus, but menus might not be
+       their first focus. You can implement a felxible image like this: img { width: 100%; max-width: 100%; height: auto; } in the css file. You can also implement flexible 
+       images directly in the HTML by using different pixel densities or the width of the device. Common device widths are  320px, 480px, 760px, 960px, 1200px, 1600px.
+       Start designing smallest screen and move up. 
+      </p>
+
+      
+    
+
     <h2>Lesson 18: Using Media Queries and Breakpoints</h2>
 
     <ul>
@@ -64,6 +116,44 @@
       </ul>
       
     <p>Summary for Lesson 18</p>
+
+    <p>Media queries are work like if/then statements based on the devices viewing page. 
+
+    </p>
+
+    <p>There are 10 media types that CSS can utilize with media queries:</p>
+    <ul>
+      <li>All—All media</li>
+      <li>Braille—Braille and tactile feedback devices</li>
+      <li>Embossed—Paged braille printers</li>
+      <li>Handheld—Small-screen low-bandwidth handheld devices</li>
+      <li>Print—Paged media and documents in print preview mode</li>
+      <li>Projection—Projected presentations</li>
+      <li>Screen—Color computer screens</li>
+      <li>Speech—Speech synthesizers</li>
+      <li>TTY—Teletypes and media with a fixed-pitch character grid</li>
+      <li>TV—Television</li>
+    </ul>
+
+    <p>Media queries also allows for expressions to be utilized. The and expression combines features and types together. the comma-separated list is the OR logical expression
+      equivalent. A not expression will negate the entire query. The only expression can prevent browsers that do not support media queries from applying the styles. 
+    </p>
+
+    <p>Examples of media query expressions: </p>
+    <ul>
+      <li>AND: @media (min-width: 760px) and (orientation: landscape) { ... }</li>
+      <li> Comma-separated list (OR):@media (min-width: 760px), (orientation: landscape) { ... }</li>
+      <li>NOT (!): @media not (min-width: 760px) and (orientation: landscape) { ... }</li>
+      <li>only: @media only screen { ... }</li>
+    </ul>
+
+    <p>Breakpoints are most commonly done by the width of the device. Optimal breakpoints should be based on the websites design. Breakpoints should have a 1px difference.
+        So when moving to a different breakpoint, the next breakpoint should be exactly 1px different than the previous one. It is important to consider the device's orientation and not
+        just the width. Additionally, some devices utilize retina. Pages displayed on Retina displays and other high-pixel-density devices can look bad if your images aren’t optimized for them.  
+    </p>
+    
+
+
 
 
 </body>

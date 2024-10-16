@@ -1,9 +1,29 @@
 @media screen and (min-width: 750px) {
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 1.25em;
+    }
     
 }
 
 
 @media screen and (max-width: 749px) {
+
+
+    body{
+        line-height: 1.2em;
+    }
+
+    h1{
+        font-size: 1.25em;
+    }
+
+    h2{
+        font-size: 1.1em;
+    }
     
 }
 
