@@ -36,7 +36,9 @@
 
     </p>
 
-    <p>You can write comments with two forward slashes //. These comments are for giving other people/developers a comment on what the code is trying to accomplish. 
+    <p>You can write comments with two forward slashes //. These comments are for giving other people/developers a comment on what the code is trying to accomplish.
+         /*  */ This also works to comment things. Anything placeed between the /*  */ will be commented out which can comment out multiple lines.
+        Comments help make code easier to understand and useful for marking sections of a script. 
     </p>
 
     <h2>Lesson 20: Getting Started with JavaScript Programming</h2>
@@ -49,7 +51,63 @@
         <li>Basic syntax rules for avoiding JavaScript errors</li>
         <li>What JSON is and how it can be used</li>
     </ul> 
-    <p></p>
+    <p>Summary of Lesson 20</p>
+
+    <p>Statements are the basic units of JavaScript program. now = new Date();
+
+        hours = now.getHours();
+        
+        mins = now.getMinutes();
+        
+        secs = now.getSeconds();
+
+        You must end JavaScript with a ;, because it marks the end of the statement.
+    </p>
+
+    <p>JavaScript supports 3 kinds of objects:</p>
+    <ul>
+        <li>Built-in objects: These objects are built directly into the JavaScript language. These objects are Date, Array, String, to name a few.</li>
+        <li>DOM (Document Object Model) objects:These objects represent various components of the browser and the current HTML document. For example, the alert() function you used earlier in this lesson is actually a method of the window object.  </li>
+        <li>Custom objects: These objects are objects created by the developer.</li>
+ 
+    </ul> 
+
+    <p>Scripts that are within the head tag are handled first. These scripts will not create output, so it is best practice to only define function to be used later.
+        Reserved words are words built into the JavaScript language, and as such can not be used to name variables/objects. 
+    </p>
+
+    <p>Best Practices for JavaScript</p>
+
+    <ul>
+        <li>Use comments liberally—Comments make your code easier for others to understand and also easier for you to understand when you edit it later. They are also useful for 
+            marking the major divisions of a script.
+        </li>
+        <li>Use a semicolon at the end of each statement and use only one statement per line—Although you learned in this lesson that you do not have to end each statement with a 
+            semicolon (if you use a new line), using semicolons and only one statement per line will make your scripts easier to read and also easier to debug.
+        </li>
+        <li>Use external JavaScript files whenever possible—Separating JavaScript into external files helps pages load more quickly and also encourages you to write modular scripts 
+            that can be reused.
+        </li>
+        <li>Avoid being browser specific—As you learn more about JavaScript, you’ll learn some features that work in only one browser. Avoid such features unless absolutely necessary, 
+            and always test your code in more than one browser to ensure that everything works.
+        </li>
+        <li>Keep JavaScript optional—Don’t use JavaScript to perform an essential function on your site (for example, for the primary navigation links). Whenever possible, users without
+             JavaScript should be able to use your site, although it might not be quite as attractive or convenient without the JavaScript. This strategy is known as progressive enhancement.
+            </li>
+    </ul>
+
+    <p>JSON: JavaScript Object Notation formalized the idea of encoding data in JavaScript.
+        var yourJSONObject = {
+            "param1":"value1",
+            "param2":"value2",
+            "param3":"value3"
+         };
+
+         JSON are mostly used for data interchange format used by application programming interfaces by
+         exchanging data in a string format, by serilization.
+    </p>
+
+    
 
     <h2>Lesson 21: Working with the Document Object Model (DOM)</h2>
     <ul>

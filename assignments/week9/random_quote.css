@@ -1,6 +1,8 @@
   h2{
     text-align: center;
     font-family: 'Libre Baskerville',Arial, Helvetica, sans-serif;
+    padding: 30px 60px;
+
   }
 
   @media (min-width: 481px) and (max-width: 1200px) {
