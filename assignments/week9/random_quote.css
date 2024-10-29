@@ -12,9 +12,6 @@
   }
   
   
-  
-  /* ######## large sized devices ######## */
-  
   @media (min-width: 1201px) {
     h2{
         font-size:45px;

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8-Lesson Notes</title>
+    <title>9-Lesson Notes</title>
 <!--
    Andrew Kim
    8 - Lesson Notes
-   10/29/24
+   10/28/24
 -->
 </head>
 <body>
@@ -121,9 +121,151 @@
         <li>How to use JavaScript to add and modify text within a page</li>
     </ul>
     
-    <p></p>
+    <p>Summary for Lesson 21</p>
+    <p>The very top of the browser object hierarchy is the window object. Objects are distinct instance of the browser and will only work on the 
+        one actively being used. 
+        
+    </p>
 
+    <p>Some document object properties: </p>
+    <ul>
+        <li>document.URL—Specifies the document’s URL. You (or your code) cannot change the value of this property.</li>
+        <li>document.title—Refers to the title of the current page, defined by the HTML &lt;title&gt; tag. You can change the value of this property.</li>
+        <li>document.referrer—Returns the URL of the page the user was viewing before the current page—usually the page with a link to the current page. 
+            As with document.URL, you cannot change the value of document.referrer. Note that document.referrer will be blank if a user has directly accessed a given URL directly.</li>
+        <li>document.lastModified—Indicates the date the document was last modified. This date is sent from the server along with the page.</li>
+        <li>document.cookie—Enables you to read or set a cookie used within the document.</li>
+        <li>document.images—Returns a collection of images used in the document.</li>
+    </ul>
+
+    <p>Document.write can only be utilized in the body tag and/or used in a function. Additionally the function must be in the body tag. </p>
+
+    <p>history.length—Keeps track of the length of the history list—in other words, the number of different locations the user has visited.</p>
+    <p>3 methods</p>
+    <ul>
+        <li>history.go—Opens a URL from the history list. To use this method, specify a positive or negative number in parentheses. For example, history.go(−2) is
+             equivalent to clicking the Back button twice.</li>
+        <li>history.back—Loads the preceding URL in the history list. This is equivalent to clicking the Back button or using history.go(−1).</li>
+        <li>history.forward—Loads the next URL in the history list, if available. This is equivalent to clicking the Forward button or using history.go(1).</li>
+    </ul>
+    
+<!--
+    Button made back and forward button instead of the built-in browser.
+    <button type="button"onclick="history.back();">Go Back</button>
+    <button type="button"onclick="history.forward();">Go Forward</button>
+
+-->
+
+<p>Location Objects: </p>
+<ul>
+    <li>location.protocol—The protocol part of the URL (http in this example)</li>
+    <li>location.hostname—The hostname of the URL (www.google.com in this example)</li>
+    <li>location.port—The port number of the URL (443 in this example)</li>
+    <li>location.pathname—The filename part of the URL (search in this example)</li>
+    <li>location.search—The query portion of the URL, if any (q=javascript in this example)</li>
+    <li>location.host—The hostname of the URL plus the port number (for example, www.google.com:443)</li>
+    <li>location.hash—The anchor name used in the URL, if any (for example, www.google.com/#home)</li>
+</ul>
+
+<p>Location has 3 methods. location.assign will load a new document page.  location.reload will reload the current document, and location.replace will replace the current location with a new one.</p>
+
+<p>Basic Node Properties: </p>
+
+<ul>
+    <li>nodeName—The name of the node (not the ID). For nodes based on HTML tags, such as &lt;p&gt; or &lt;body&gt;, the name is the tag name: p or body. For the document node, the name is a special code: #document. 
+        Similarly, text nodes have the name #text. This is a read-only value.</li>
+    <li>nodeType—An integer describing the node’s type, such as 1 for normal HTML tags, 3 for text nodes, and 9 for the document node. This is a read-only value.</li>
+    <li>nodeValue—The actual text contained within a text node. This property returns null for other types of nodes.</li>
+    <li>innerHTML—The HTML content of any node. You can assign a value including HTML tags to this property and change the DOM child objects for a node dynamically.</li>
+</ul>
+
+<p>Node Relationships: </p>
+<ul>
+    <li>firstChild—The first child object for a node. For nodes that contain text, such as &lt;h1&gt; or &lt;p&gt;, the text node containing the actual text is the first child.</li>
+    <li>lastChild—The node’s last child object.</li>
+    <li>childNodes—An array that includes all of a node’s child nodes. You can use a loop with this array to work with all the nodes under a given node.</li>
+    <li>previousSibling—The sibling (node at the same level) previous to the current node.</li>
+    <li>nextSibling—The sibling after the current node.</li>
+</ul>
+<p>Document Methods: </p>
+<ul>
+    <li>getElementById(id)—Returns the element with the specified id attribute.</li>
+    <li>getElementsByTagName(tag)—Returns an array of all the elements with a specified tag name. You can use the wildcard * to return an array containing all the nodes in the document.</li>
+    <li>createTextNode(text)—Creates a new text node containing the specified text, which you can then add to the document.</li>
+    <li>createElement(tag)—Creates a new HTML element for the specified tag. You need to add the element to the document after creating it. You can assign content within the element by changing its child objects or the innerHTML property.</li>
+</ul>
+<p>Node Methods: </p>
+<ul>
+    <li>appendChild(new)—Appends the specified new node after all the object’s existing nodes.</li>
+    <li>insertBefore(new, old)—Inserts the specified new child node before the specified old child node, which must already exist.</li>
+    <li>replaceChild(new, old)—Replaces the specified old child node with a new node.</li>
+    <li>removeChild(node)—Removes a child node from the object’s set of children.</li>
+    <li>hasChildNodes—Returns true if the object has one or more child nodes, or false if it has none.</li>
+    <li>cloneNode—Creates a copy of an existing node. If a parameter of true is supplied, the copy will also include any child nodes of the original node.</li>
+</ul>
+
+<p>Using the visibility property, you can hide or show objects. </p>
 
 </body>
 </html>
 
+
+
+
+<!--
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Dynamic Text in JavaScript</title>
+
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+
+    <h1 id="heading1">Dynamic Text in JavaScript</h1>
+
+    <p>Using the W3C DOM, you can dynamically change the 
+
+    heading at the top of this page.</p>
+
+    <p>Enter a new title and click the Change! button. </p>
+
+    
+
+    <form name="changeform">
+
+    <input name="newtitle"size="40">
+
+    <button type="button"onclick="changeTitle();">Change!</button>
+
+    </form>
+
+    <script>
+
+      function changeTitle() {
+
+        if (!document.getElementById) return;
+
+        var newtitle = document.changeform.newtitle.value;
+
+        var heading1 = document.getElementById("heading1");
+
+        heading1.firstChild.nodeValue=newtitle;
+
+      }
+
+    </script>
+
+  </body>
+
+</html>
+-->
