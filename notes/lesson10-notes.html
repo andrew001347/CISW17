@@ -42,7 +42,61 @@
     <li>There is no official limit on the length of a variable name, but it must fit on one line. If your variable names are longer than that—or even longer than 25 or so characters—you might consider a different naming convention.</li>
 </ul>
 
-<p></p>
+<p> Variables can be two types, a global and local variable. Global variables can be accessed in the entire script, while local variables have a single function as their scope.
+    Unless the var keyword is utilized outside the function, the var keyword is used to make a local variable. 
+</p>
+
+<p>JavaScript Operators: </p>
+<ul>
+    <li><code>+</code> Concatenate (combine) strings<br>
+        <code>message = "this is" + " a test";</code>
+    </li>
+    <li><code>+</code> Add<br>
+        <code>result = 5 + 7;</code>
+    </li>
+    <li><code>−</code> Subtract<br>
+        <code>score = score − 1;</code>
+    </li>
+    <li><code>*</code> Multiply<br>
+        <code>total = quantity * price;</code>
+    </li>
+    <li><code>/</code> Divide<br>
+        <code>average = sum / 4;</code>
+    </li>
+    <li><code>%</code> Modulo (remainder)<br>
+        <code>remainder = sum % 4;</code>
+    </li>
+    <li><code>++</code> Increment<br>
+        <code>tries++;</code>
+        <code>++tries; - this will add first before doing the next command.</code>
+    </li>
+    <li><code>--</code> Decrement<br>
+        <code>total--;</code>
+        <code>--total; - this will subtract first before doing the next command.</code>
+    </li>
+</ul>
+
+<p>JavaScript Data Types: </p>
+<ul>
+    <li>Number—Examples of numbers are 3, 25, and 1.4142138. JavaScript supports both integers and floating-point numbers.</li>
+    <li>Boolean—Booleans are logical values. A Boolean can have one of two values, true or false, and is useful for indicating whether a certain condition is true.</li>
+    <li>String—A string, such as "I am a jelly doughnut", consists of one or more characters of text. (Strictly speaking, strings are String objects, which you’ll learn about later in this lesson.)</li>
+    <li>Null—The null value, represented by the keyword null, is the value of an undefined variable. For example, the statement document.write(fig) will result in a null value (and an error message) if the variable fig has not been previously used or defined.</li>
+</ul>
+
+<p>Additionally, you can convert between data types. parseInt will convert a string into a float and parseFloat will make a string into a float value.
+    For example: var stringvar = "30 angry polar bears"; var numvar = parseInt(stringvar); This will result into numvar = 30.
+</p>
+
+<p>Create string objects with the keyword new. var stringtest = "This is a test"; stringtest = new String("This is a test"); These two variables are creating the same object containing the words This is a test. with
+    the variable names stringtest. The second way invovles using object oriented syntax. 
+</p>
+
+<p>Some neat tricks you can do with string is calcualte the length of the string with .length. Additionally, you can use toUpperCase to convet all characters to toUpperCase
+    and toLowerCase to make all the characters in the string to lowercase. 
+</p>
+
+
 
 </body>
 </html>
