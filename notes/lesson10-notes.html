@@ -97,8 +97,125 @@
     the string will have the 0 position of the array. 
 </p>
 
-<p>There are two ways we can create arrays. One by creating an object,scores = new Array(39,40,100,49); Or simply declaring it: scores = [39,40,100,49];. </p>
+<p>There are two ways we can create arrays. One by creating an object,scores = new Array(39,40,100,49); Or simply declaring it: scores = [39,40,100,49];. 
+    To create String Arrays, we start with its creation, names = new Array(30); and then assigning them, names[0] = "John H. Watson"; names[1] = "Sherlock Holmes";
+     or names = new Array("John H. Watson", "Sherlock Holmes"); names = ["John H. Watson", "Sherlock Holmes"];
+    An intersting method we can utilize is the .split. .split(" "); this will seperate words/characters based on a white space.
 
+</p>
+
+<p>A function is a group of JavaScript statements that can be treated as a single unit. To use a function, you must first define it.
+    <pre>function Greet() {
+
+        alert("Greetings!");
+    
+    }</pre>
+    Scripts will not work if the function is not loaded in the head tag of the document.
+    
+</p>
+
+<p>Objects: </p>
+<ul>
+    <li>DOM objects—These objects enable your scripts to interact with elements of the web browser and web documents.</li>
+    <li>Built-in objects—These include strings and arrays, which you learned about previously in this lesson.</li>
+  </ul>
+  
+
+<pre>
+<code>
+The first step in creating an object is to name it and its properties. In this case, you should call your object Card, and it will have the following properties:
+name, email, address, phone.
+
+To use this object in a JavaScript we need to create a function to make new instances of the Card object. This is called a constructor for an object.
+
+function Card(name, email, address, phone) {
+   this.name = name;
+   this.email = email;
+   this.address = address;
+   this.phone = phone;
+}
+
+Next, we need to create a method to work with the Card object. Because all Card objects will have the same properties, it might be handy to have a function that prints the properties in a neat format. 
+
+
+function printCard() {
+    var name_line = "Name: " + this.name + "<br>\n";
+    var email_line = "Email: " + this.email + "<br>\n";
+    var address_line = "Address: " + this.address + "<br>\n";
+    var phone_line = "Phone: " + this.phone + "<hr>\n";
+    document.write(name_line, email_line, address_line, phone_line);
+ }
+
+ Now we have a function that prints a card and its contents.
+
+ function Card(name,email,address,phone) {
+    this.name = name;
+    this.email = email;
+    this.address = address;
+    this.phone = phone;
+    this.printCard = printCard; this last part is what defines a function rather than assingning a value. 
+ }
+</code>
+</pre>
+
+<p>The Math object is a built-in JavaScript object that includes math constants and functions. You’ll never 
+    need to create a Math object because it exists automatically in any JavaScript program. The Math object’s 
+    properties represent mathematical constants, and its methods are mathematical functions. If you’re working 
+    with numbers in any way in your JavaScript, the Math object will be your new best friend.
+</p>
+
+<p>Rounding and Truncating </p>
+<ul>
+    <li>Math.ceil—Rounds a number up to the next integer</li>
+    <li>Math.floor—Rounds a number down to the next integer</li>
+    <li>Math.round—Rounds a number to the nearest integer</li>
+  </ul>
+
+  <p>Generating a random number:</p>
+  <pre>
+    <code>
+        function rand(num) {
+            return Math.floor(Math.random() * num) + 1;
+         }
+
+         Using built-in method: 
+         var total = 0;
+         for (i=1; i<=5000; i++) {
+            var num = Math.random();
+
+            total += num;
+        
+        }
+    </code>
+</pre>
+<p>Create a Date Object with the keyword new.</p>
+<p>Setting Date Values: </p>
+<ul>
+    <li>setDate—Sets the day of the month.</li>
+    <li>setMonth—Sets the month, from 0 for January to 11 for December.</li>
+    <li>setFullYear—Sets the year.</li>
+    <li>setTime—Sets the time (and the date) by specifying the number of milliseconds since January 1, 1970.</li>
+    <li>setHours, setMinutes, and setSeconds—Set the time.</li>
+  </ul>
+
+  <p>Reading(Getting) Date Values: </p>
+  <ul>
+    <li>getDate—Gets the day of the month.</li>
+    <li>getMonth—Gets the month.</li>
+    <li>getFullYear—Gets the four-digit year.</li>
+    <li>getTime—Gets the time (and the date) as the number of milliseconds since January 1, 1970.</li>
+    <li>getHours, getMinutes, getSeconds, and getMilliseconds—Get the components of the time.</li>
+  </ul>
+  
+
+  <p>Converting between Date formats:
+  </p>
+
+  <ul>
+    <li>Date.parse—Converts a date string, such as March 1, 2018, to a Date object (the number of milliseconds since 1/1/1970).</li>
+    <li>Date.UTC—Converts a Date object value (the number of milliseconds) to a UTC (GMT) time.</li>
+  </ul>
+  
 
 </body>
 </html>
