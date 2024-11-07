@@ -1,5 +1,5 @@
 function startMadLibs() {
-    document.getElementById("instrucctions").style.display = "none";
+    document.getElementById("instrucctions").style.display = "hidden";
   
     const personsName = prompt("Enter a proper noun (Person’s Name):");
     const adj1 = prompt("Enter an adjective:");
@@ -22,7 +22,11 @@ function startMadLibs() {
     const adj5 = prompt("Enter another adjective:");
     const adj6 = prompt("Enter a final adjective:");
   
-    const message = `Dear ${personsName}, I am writing to you from a ${adj1} castle in an enchanted forest. I found myself here one day after going for a ride on a ${color} ${animal} in ${place}. There are ${adj2} ${magicalCreatures} and ${adj3} ${magicalCreatures2} here! In the ${roomInAHouse} there is a pool full of ${noun}. I fall asleep each night on a ${noun2} of ${noun3} and dream of ${adj4} ${nouns}. It feels as though I have lived here for ${number} ${measureOfTime}. I hope one day you can visit, although the only way to get here now is ${verbING} on a ${adj5} ${adj6}!!`;
+    const message = `Dear ${personsName}, I am writing to you from a ${adj1} castle in an enchanted forest. I found myself here one day after
+     going for a ride on a ${color} ${animal} in ${place}. There are ${adj2} ${magicalCreatures} and ${adj3} ${magicalCreatures2} here! In 
+     the ${roomInAHouse} there is a pool full of ${noun}. I fall asleep each night on a ${noun2} of ${noun3} and dream of ${adj4} ${nouns}. 
+     It feels as though I have lived here for ${number} ${measureOfTime}. I hope one day you can visit, although the only way to get here now 
+     is ${verbING} on a ${adj5} ${adj6}!!`;
   
     document.getElementById("madlib").innerHTML = message;
   }
