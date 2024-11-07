@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>W3 CSS notes page.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="form-poem.js" defer></script>
+<!-- 
+Andrew Kim
+Assignment: Barebones HTML Template
+//24
+-->
+
+</head>
+<body>
+    <header class="w3-center">
+        
+        <h1>You pick the words for the poem! </h1>
+    </header>
+    <main>
+        <form id="poemForm" class="w3-container w3-card-4 w3-light-grey">
+            
+
+            <label for="adj1">Please enter an adjective: </label>
+            <input type="text" id="adj1" class="w3-input" required>
+
+            <label for="adj2">Please enter another adjective: </label>
+            <input type="text" id="line2" class="w3-input" required>
+
+            <label for="noun">Please enter a noun:</label>
+            <input type="text" id="noun" class="w3-input" required>
+
+            <label for="adj3">Please enter one more adjective: </label>
+            <input type="text" id="line4" class="w3-input" required>
+
+            <button type="submit" class="w3-button w3-blue">Submit</button>
+        </form>
+
+        <div id="poemOutput" class="w3-container w3-card-4 w3-light-grey" style="display:none;">
+            <pre id="poemDisplay"></pre>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+
