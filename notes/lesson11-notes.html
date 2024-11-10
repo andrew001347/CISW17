@@ -32,11 +32,48 @@
   </ul>
 
     <p>Summary for Lesson 23</p>
-    <p>the if statement is the main conditional statement in JavaScript. A conditional expression usually includes two balues to be compared
-        and a conditional operator to compare the values. 
+    <p>The if statement is the main conditional statement in JavaScript. In this conditional statement we can also add 
+        and else keyword to add additional commands if the IF statement is not met. A conditional expression usually includes 
+        two balues to be compared and a conditional operator to compare the values. Some conditional operators are: 
     </p>
+    <ul>
+        <li>== — Is equal to</li>
+        <li>!= — Is not equal to</li>
+        <li>&lt; — Is less than</li>
+        <li>&gt; — Is greater than</li>
+        <li>&gt;= — Is greater than or equal to</li>
+        <li>&lt;= — Is less than or equal to</li>
+      </ul>
 
+      <p>We can also use logical operators such as ||(OR), &&(AND), and !(NOT)  </p>
+      
+      <p>Examples: </p>
+      <ul>
+        <li>if ((phone == "") || (email == "")) alert("Something Is Missing!");</li>
+        <li>if ((phone == "") && (email == "")) alert("Both Values Are Missing!");</li>
+        <li>if (phone != "") alert("phone is OK"); or if (!phone == "") alert("phone is OK"); </li>
+      </ul>
+    <p>Shorthand Conditional Expressions: </p>
+    <code>
+        variable= (condition) ? (value if true) : (value if false);
 
+        value = (a == 1) ? 1 : 0; //if the value is 1 make it 1, else 0
+
+        is the same as 
+
+        if (a == 1) {
+
+            value = 1;
+         
+         } else {
+         
+            value = 0;
+         
+         }
+    </code>
+
+<p> Using </p>
+      
 
     <h2>Lesson 24: Responding to Events and Using Windows</h2>
     <ul>
@@ -49,6 +86,8 @@
         <li>How to delay a script’s actions by using timeouts</li>
         <li>How to display alerts, confirmations, and prompts</li>
       </ul>
+
+
       
     <p></p>
 
