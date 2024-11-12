@@ -7,7 +7,7 @@
 <!--
    Andrew Kim
    11 - Lesson Notes
-   11/12/24
+   11/11/24
 -->
 </head>
 <body>
@@ -96,8 +96,61 @@
 
 
       
-    <p></p>
+    <p>Event handlers are among the most powerful features of JavaScript. To utilize it we do not need to use the 
+      script tag. Instead we use the event name and code to invoke the event handler as an attribute of an individual
+      HTML tag. For example: 
+    </p>
+    <code><a href="http://www.google.com/"
+      onmouseover="alert('You moved over the link.');">
+      This is a link.</a>
 
+      We can also use it to call a function:
+      <a href="#bottom"onmouseover="doIt();">Move the mouse over this link.</a>
+
+
+    </code>
+    <p>Event handlers are stored as properties of the document object or another object that can receive an event. 
+      There are many events you can listen for. The click event can be used to invoke all sorts of actions. 
+      These are some of the most commonly used ones:
+    </p>
+    <ul>
+      <li>focus — When the element is focused on with a mouse or keyboard (tab).</li>
+      <li>blur — When the element loses focus.</li>
+      <li>click — When the element is clicked.</li>
+      <li>dblclick — When the element is clicked twice.</li>
+      <li>keydown — When a key is pressed down.</li>
+      <li>keyup — When a key is released.</li>
+      <li>keypress — When a key is pressed, relaying the key value.</li>
+      <li>mouseover — When the mouse pointer is over the element.</li>
+      <li>mouseout — When the mouse pointer is moved off an element after hovering.</li>
+      <li>mousemove — When the mouse moves.</li>
+      <li>mousedown — When the mouse button is pressed over an element.</li>
+      <li>mouseup — When the mouse button is released over an element.</li>
+      <li>load — When the element has fully loaded.</li>
+    </ul>
+    
+    <p>Common properties of the event object: </p>
+    <ul>
+      <li>event.modifiers — A flag that indicates which modifier keys (Shift, Ctrl, Alt, etc.) were held down during the event. This value is an integer that combines binary values representing the different keys.</li>
+      <li>event.pageX — The x coordinate of the event within the web page.</li>
+      <li>event.pageY — The y coordinate of the event within the web page.</li>
+      <li>event.which — The key code for keyboard events (in Unicode) or the button that was pressed for mouse events.</li>
+      <li>event.button — The mouse button that was pressed. The left button’s value is 0, and the right button’s value is 2. If the mouse has a middle button, the value is 1.</li>
+      <li>event.target — The object where the event occurred.</li>
+    </ul>
+    <p>We can keep track of keybaord actions with the event handler keypress. </p>
+
+    <p>Properties of the window Object: </p>
+    
+    <ul>
+      <li>window.closed — Indicates whether the window has been closed. Useful when working with multiple windows, as the current window containing the script cannot be closed without ending the script.</li>
+      <li>window.name — Specifies the name for a window opened by a script.</li>
+      <li>window.opener — In a new window opened by a script, provides a reference to the window containing the script that opened it.</li>
+      <li>window.outerHeight and window.outerWidth — Specify the height and width, respectively, of the outside of a browser window.</li>
+      <li>window.screen — Provides a child object that stores information about the screen the window is in, including resolution, color depth, and more.</li>
+      <li>window.self — Acts as a synonym for the current window object.</li>
+    </ul>
+    
 
 </body>
 </html>
