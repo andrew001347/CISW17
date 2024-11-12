@@ -1,39 +1,38 @@
-    let months = form.months.value;
-    let days = form.days.value;
+
+const message = document.getElementById("message");
+const monthsInput = document.getElementById("months");
+const daysInput = document.getElementById("days");
+const yearsInput = document.getElementById("years");
+const submit = document.getElementById("submit");
+
 
 const today = new Date();
-const month = today.getMonth();
-const day = today.getDate();
+const currentMonth = today.getMonth() +1;
+const currentDay = today.getDate();
+const currentYear = today.getFullYear();
 
 
-const bday = new Date(months, days) //const bday = new Date(1997, 2, 5) march is 2 because of array indexing.
-const bd_month = bday.getMonth();
-const bd_day = bday.getDate();
+function itsYourBirthday() {
 
-const submit = document.getElementById("submit"); 
-message.style.display="none";
+    let months = monthsInput.value;
+    let days = daysInput.value;
+    let years = yearsInput.value;
+ 
+    let age = currentYear - years;
+
+ 
+    if (months == currentMonth && days == currentDay) {
+        message.innerHTML = `Happy Birthday! You are ${age} years old!`; 
+    } else {
+        message.innerHTML = `It's not your birthday today. You are ${age -1} years old!`;
+    }
+}
 
 submit.addEventListener("click", itsYourBirthday);
 
-form.addEventListener("keydown", function(event) {
+
+document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-        event.preventDefault();
-        generatePoem();
+        itsYourBirthday();
     }
 });
-
-function itsYourBirthday(){
-
-
-if(bd_month==month && bd_day == day){
-    document.getElementById("message").innerHTML = "Happy Birthday!"; 
-
-}
-else{
-    document.getElementById("message").innerHTML = "It's not your birthday today"; 
-
-}
-
-
-}
-

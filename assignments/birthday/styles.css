@@ -1,36 +1,39 @@
-/* Center the main container and limit its width */
 body {
-    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial';
+    font-size: 36px;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-header {
-    max-width: 500px;
-    width: 90%;  /* Makes it responsive */
     text-align: center;
+}
+form {
+    width: 80%;
+    max-width: 400px;
     padding: 20px;
-    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Centering input fields */
-input.w3-input {
-    width: 100%;  /* Full width of container */
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+label, input, button {
+    width: 100%;
+    margin-top: 10px;
 }
 
-#message {
-    font-family: "Mea Culpa", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+h1#message {
+    font-family: 'Mea Culpa', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 96px;
+}
+
+button{
+
+    font-family: 'Arial', cursive;
+}
