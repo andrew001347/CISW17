@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+.darkmode{
+    background-color: rgb(55, 55, 55);
+    color: rgb(210, 210, 210);
+}
+
+h1{
+    font-size: 300px;
+}
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
