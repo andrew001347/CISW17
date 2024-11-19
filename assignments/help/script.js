@@ -1,11 +1,13 @@
 
-function help(e){
+function showHelp(e){
 
     if(e.keyCode == 72 || e.keyCode == 191)
     {
-        document.body.classList.toggle("hide");
+        
+        document.getElementById("nojs").classList.toggle("hide");
+        document.getElementById("help").classList.toggle("hide");
     }
 
 }
 
-document.onkeydown = help;
+document.onkeydown = showHelp;
