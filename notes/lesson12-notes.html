@@ -29,10 +29,42 @@
     <li>How to support non-JavaScript browsers.</li>
 </ul>
 </div>
-<p></p>
+
+<p>Some of the best scripting practices include to be readable and easy to maintain, follows standars and won't be 
+    crippled when a new version of a browser is released, pages that work without JavaScript, easily adapt the code from one site 
+    or project. It is important to keep JavaScript to a minimum. Additionally, 
+</p>
+
+<p>Content presentation and behavior: </p>
+<ul>
+    <li>Content consists of the words that a visitor can read on your pages. You create the content as text and mark it up with HTML 
+        to define different classes of content—headings, paragraphs, links, and so on.
+    </li>
+    <li>Presentation is the appearance and layout of the words, images, and other elements on each page—text formatting, fonts, colors, 
+        and graphics. This is where the power of CSS comes into play.
+    </li>
+    <li>Behavior is what happens when you interact with a page—items that highlight when you move over them, forms you can submit, 
+        and so on. This is where JavaScript enters into the picture for enhanced front-end interactivity, along with server-side 
+        languages such as PHP and Ruby.
+    </li>
+</ul>
+
+<p>As the web continues to advance forward, we want to be mindful of graceful degradation. Some of the earliest web browsers
+    did not support images in HTML. To make it accessible, it is important to present something helpful to users whenever unsupported tag is encountered.
+    Furthermore, there is accessibility problems with users such as limited vision/hearing.    
+</p>
+<p>We want to start off the HTML documents as simple as possible to ensure primitive browers can support it.
+    In the end we can integrate progressive enhacement where we dynamically add features to make the site better looking. 
+    When we are utlizing event listeners, we want to load the event in. EX: window.addEventListener('load', Startup, false);
+    
+    To handle unforseen errors we should implement the try catch statements. 
+</p>
+
 
 <h3>Reflection</h3>
-
+<p> This lesson highlights the importance of not only user-friendly site, but code as well. We should keep JavaScript only when necessary
+    and document our code to help other developers or our future selves to understand what the code is doing.
+</p>
 
     <h2 class="w3-container w3-teal">Lesson 26: Using Third-Party JavaScript Libraries and Functions</h2>
     <div class="w3-container">
@@ -45,9 +77,29 @@
         <li>The benefits of JavaScript frameworks</li>
     </ul>
 </div> 
-    <p></p>
+    <p>There are many different types of Third-Party JavaScript Libraries and Frameworks. jQuery is a library
+        that allows for DOM manipulation and cross-browser coding features. The Prototype library  simplifies 
+        tasks such as working with DOM objects, dealing with data in forms, and remote scripting (AJAX). This 
+        can be included with a simple Prototype.js file and with the &lt;script src="prototype.js"&gt;&lt;/script&gt;
+        tag.  
+    </p>
+
+    <p>Using JavaScript Frameworks</p>
+<p>JavaScript libraries are smaller, offering reusable code to enhance custom architectures, while frameworks are 
+    larger and enforce a specific structure, like the Model-View-Controller (MVC) pattern. In MVC, applications are 
+    divided into three components: Model (manages data and logic), View (displays information), and Controller 
+    (handles user interactions).</p>
+<ul>
+    <li><strong>Model</strong>—Acts as the central component, even though it’s listed first in the name, holding application data, business rules, functions, and other logical elements.</li>
+    <li><strong>View</strong>—Requests information from the model to show to the user.</li>
+    <li><strong>Controller</strong>—Sends information to the model for processing through user interactions.</li>
+</ul>
+
 
     <h3>Reflection</h3>
+    <p>Implementing code blindly is never a good thing. We should always try to understand what is happening in our code especially
+        when we are third-party codes such as libraries and frameworks. 
+    </p>
 
 </body>
 </html>
