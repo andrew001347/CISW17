@@ -1,0 +1,13 @@
+body{
+    margin: auto;
+    max-width: 600px;
+}
+
+input{
+    margin: 20px 10px; 
+}
+
+form{
+    background-color: lightgray;
+
+}
