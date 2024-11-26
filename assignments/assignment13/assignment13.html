@@ -11,24 +11,23 @@ Andrew Kim
 Assignment: Barebones HTML Template
 11/26/24
 -->
-
 </head>
 <body>
-    <header class="w3-center">
+    <header class="w3-container w3-center w3-teal">
         
         <h1>Forms </h1>
     
     </header>
     <main>
-        <form class="w3-container w3-light-grey w3-card-4" style="width:50%; margin:auto; ">
-            <label for="firstName">First Name </label>
-            <input class="w3-input w3-border " type="text" placeholder="Andrew" style="margin-bottom: 20px;">
+        <form class="w3-container w3-light-grey w3-card-4" style="width:50%; margin:auto; padding-top: 20px;">
+            <label class="w3-text-teal" for="firstName">First Name </label>
+            <input class="w3-input w3-border w3-hover-red" type="text" placeholder="Andrew" style="margin-bottom: 20px;">
         
-            <label for="lastName">Last Name </label>
-            <input class="w3-input w3-border" type="text" placeholder="Kim"  style="margin-bottom: 20px;">
+            <label class="w3-text-teal" for="lastName">Last Name </label>
+            <input class="w3-input w3-border w3-hover-yellow" type="text" placeholder="Kim"  style="margin-bottom: 20px;">
 
-            <label for="message">Message: </label>
-            <input class="w3-input w3-border" name="message" type="text" placeholder="I love Mt. SAC" maxlength="50" style="margin-bottom: 20px;">
+            <label class="w3-text-teal" for="message">Message: </label>
+            <input class="w3-input w3-border w3-hover-green" name="message" type="text" placeholder="I love Mt. SAC" maxlength="50" style="margin-bottom: 20px;">
             
        
         <div style=" text-align: left;" > 
@@ -47,8 +46,11 @@ Assignment: Barebones HTML Template
                 <label>JavaScript</label>
             </p>
         </div>
-
-        <p style="margin-top: 25px; background-color: lightcoral;"> &emsp; Note: This form has no submit button</p>
+<!-- not quite right -->
+        <p>
+            <span style="background-color: red; padding: -5px; margin-right: -5px;">&nbsp;</span>
+            <span style="margin-top: 25px; background-color: rgb(248, 187, 187);"> &nbsp; Note: This form has no submit button</p></span>
+        </p>
 
         </form>
         
