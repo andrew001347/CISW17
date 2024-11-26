@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>12-Lesson Notes</title>
+<!--
+   Andrew Kim
+   13 - Lesson Notes
+   11/25/24
+-->
+</head>
+<body>
+
+<header>
+    <h1> Lesson 13 Notes </h1>
+    <h2 class="w3-container w3-teal">Lesson 27 Working with Web-Based Forms</h2>
+
+</header>
+<div class="w3-container">
+    <ul>
+        <li>How HTML forms work</li>
+        <li>How to create the front end of an HTML form</li>
+        <li>How to name pieces of form data</li>
+        <li>How to include hidden data in forms</li>
+        <li>How to choose the correct form input controls for different situations</li>
+        <li>How to validate form data</li>
+        <li>How to submit form data</li>
+        <li>How to use the form object with JavaScript</li>
+    </ul>
+    
+    <p>
+        Forms are part of a web page that allows users to enter information to be sent back to:
+        you (a specific email address), to a database, or another system altogether such as a 
+        third-party management system. POST is a method that allows form entry results to be sent as documents.
+        GET submits the results as part of the URL query string instead.  EX:
+    </p>
+
+    <code>
+        <form name="my_form" method="post" action="myprocessingscript.php">
+
+        <form name="my_form"method="post"action="mailto:me@mysite.com">
+
+
+    </code>
+
+    <p>The action attribute specifies the address for sending the form data. With each form you can attach
+        a label tag with it. A label tag will act as a acption for a form element. To group form elements,
+        we can use the fieldset and legend tag. fieldset defines the grouping while the legend contains the text that will
+        display or be read aloud to describe the grouping. 
+    </p>
+
+    <p>There are many different types of input forms. You can use the checkbox creates a check-list like selector: input type="checkbox" 
+        radio buttons: allows for only one box to be checked with input type="radio", selection lists: creates a scrolling lists and pull-down pick lists 
+        with select tag with option tag for the list, 
+    </p>
+
+    
+</div>
+<ul>
+    <li>&lt;form&gt;…&lt;/form&gt; — Indicates an input form.</li>
+    <li>&lt;label&gt;…&lt;/label&gt; — Provides information for the form element to which it is associated.</li>
+    <li>&lt;fieldset&gt;…&lt;/fieldset&gt; — Groups a set of related form elements.</li>
+    <li>&lt;legend&gt;…&lt;/legend&gt; — Provides a label to a set of related form elements.</li>
+    <li>&lt;input&gt; — Indicates an input element for a form.</li>
+    <li>type="controltype" — Gives the type for this input widget. Some possible values are checkbox, hidden, radio, reset, submit, text, and image, among others.</li>
+    <li>name="name" — Gives the unique name of this item, as passed to the script.</li>
+    <li>value="value" — Gives the default value for a text or hidden item. For a check box or radio button, it’s the value to be submitted with the form. For Reset or Submit buttons, it’s the label for the button.</li>
+    <li>src="imageurl" — Shows the source file for an image.</li>
+    <li>checked — Is used for checkboxes and radio buttons. Indicates that this item is checked.</li>
+    <li>autofocus — Puts focus on the element when the form is loaded.</li>
+    <li>required — Indicates that the field should be validated for content, according to type (where appropriate).</li>
+    <li>pattern="pattern" — Indicates that the content of this field should be validated against this regular expression.</li>
+    <li>size="width" — Specifies the width, in characters, of a text input region.</li>
+    <li>maxlength="maxlength" — Specifies the maximum number of characters that can be entered into a text region.</li>
+    <li>&lt;textarea&gt;…&lt;/textarea&gt; — Indicates a multiline text entry form element. Default text can be included.</li>
+    <li>name="name" — Specifies the name to be passed to the script.</li>
+    <li>rows="numrows" — Specifies the number of rows this text area displays.</li>
+    <li>cols="numchars" — Specifies the number of columns (characters) this text area displays.</li>
+    <li>&lt;select&gt;…&lt;/select&gt; — Creates a menu or scrolling list of possible items.</li>
+    <li>name="name" — Shows the name that is passed to the script.</li>
+    <li>size="numelements" — Indicates the number of elements to display. If size is indicated, the selection becomes a scrolling list. If no size is given, the selection is a drop-down pick list.</li>
+    <li>multiple — Allows multiple selections from the list.</li>
+    <li>required — Indicates that the field should be validated for a selection.</li>
+    <li>&lt;optgroup&gt;…&lt;/optgroup&gt; — Indicates a grouping of &lt;option&gt; elements.</li>
+    <li>label="label" — Provides a label for the group.</li>
+    <li>&lt;option&gt;…&lt;/option&gt; — Indicates a possible item within a &lt;select&gt; element.</li>
+    <li>selected — Selects the &lt;option&gt; by default in the list when this attribute is included.</li>
+    <li>value="value" — Specifies the value to submit if this &lt;option&gt; is selected when the form is submitted.</li>
+    <li>&lt;button&gt;…&lt;/button&gt; — Creates a clickable button in the form.</li>
+    <li>name="name" — Gives the unique name of this item, as passed to the script.</li>
+    <li>&lt;output&gt;…&lt;/output&gt; — Represents the output or results of a form.</li>
+</ul>
+
+
+    <h3>Reflection</h3>
+    <p>
+        There are many types of input users can interact with. Selecting the correct input will depend on what kind of input we want from the users.
+        For example, if we want a phone number from them, we would want to specify a input for numbers instead of text.  There are different ways data 
+        that could be sent to "you". GET vs POST. I believe GET would be appropriate when data is not sensitive as it would 
+        be sent as a url, where as POST would send the results in a document. 
+
+    </p>
+
+</body>
+</html>
+
