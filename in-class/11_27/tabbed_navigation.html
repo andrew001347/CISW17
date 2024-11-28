@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="tabbed_nav.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabbed Navigation</title>
+<!-- 
+Andrew Kim
+Assignment: Tabbed Navigation
+11/27/24
+-->
+
+</head>
+<body class="w3-container">
+    <header class="w3-center">
+        
+        <h1>Tabbed Navigation</h1>
+        
+    </header>
+    <main>
+    <!--Creating tabbed navigation using buttons -->
+
+        <div class="w3-bar w3-blue">
+            <button class="w3-bar-item w3-button tablinks" onclick="openSeason(event, 'winter')"> Winter</button>
+     <button class="w3-bar-item w3-button tablinks" onclick="openSeason(event, 'spring')"> Spring</button>
+     <button class="w3-bar-item w3-button tablinks" onclick="openSeason(event, 'summer')">Summer</button>
+     <button class="w3-bar-item w3-button tablinks current" onclick="openSeason(event, 'fall')"> Fall</button>
+        </div>
+
+         <!--container div for text -->
+         <div class="w3-border w3-container w3-white">
+            <div id="winter" class="season" style="display: none;">
+                <h2>❄️ Winter</h2>
+                <p>Ruled by the enigmatic ❄️ Ice Wizard, Winter is a season of shimmering frost and magical snowfalls. With every breath, he casts frosty spells that turn the land into a sparkling wonderland. Beware of wandering too close to his icy fortress! 🧙‍♂️</p>
+            </div>
+        
+            <div id="spring" class="season" style="display: none;">
+                <h2>🌸 Spring</h2>
+                <p>The gentle 🌸 Flower Dryad awakens the world from its slumber. Her delicate touch brings blooming flowers, playful rain showers, and the sweet scent of new beginnings. Wherever she dances, life flourishes and joy abounds! 🧚‍♀️</p>
+            </div>
+        
+            <div id="summer" class="season" style="display: none;">
+                <h2>☀️ Summer</h2>
+                <p>The fiery ☀️ Phoenix rules the skies of Summer, her radiant feathers painting the world in golden hues. From long sunny days to warm starry nights, her blazing spirit fuels adventures and endless celebrations. 🔥🦅</p>
+            </div>
+        
+            <div id="fall" class="season">
+                <h2>🍂 Fall</h2>
+                <p>Guarded by the noble 🍂 Harvest Centaur, Fall is a time of abundance and change. His horn signals the harvest, and his steady stride ushers in crisp breezes and vibrant, fiery leaves. He’s the protector of the season's magic. 🐎🏹</p>
+            </div>
+        </div>
+        
+        
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
+
