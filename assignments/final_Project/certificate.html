@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="myscripts.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Certificate of Amazing-ness</title>
     <link rel="stylesheet" href="cert_style.css">
 <!-- 
@@ -14,11 +14,18 @@ Final - Certificate of Amazing-ness
 -->
 
 </head>
+
+  
+
 <body>
-    <header class="w3-yellow w3-center">
+    <header class="w3-center">
         
         <h1 class="awardee"></h1>
-        
+        <script>
+        const awardee = window.opener.awardee;
+        document.querySelector('.awardee').textContent = `${awardee}`;
+
+        </script>
     </header>
     <main>
         <p></p>
@@ -27,6 +34,8 @@ Final - Certificate of Amazing-ness
     <footer>
 
     </footer>
+
+
 </body>
 </html>
 

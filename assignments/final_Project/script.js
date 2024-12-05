@@ -1,19 +1,17 @@
 
-const my_form = document.forms.cert; 
-const printName = document.getElementsByClassName("awardee");
-var awardee = window.opener.awardee;
+
+
 
 function display(){
-    let awardee = document.getElementsByTagName("name").value;
+const userName = document.forms.cert.yourName.value;
+//console.log(userName);
 
-dispWin = window.open('certificate.html', 'NewWin','toolbar=no,status=no,titlebar=no,width=800,height=600')
+    window.awardee = userName;
 
-// send the name over to certificate.html
-awardee = document.form1.name.value;
+    // Open the child window
+    window.open('certificate.html', 'NewWin', 'toolbar=no,status=no,titlebar=no,width=800,height=600');
 
-document.write(awardee);
-// reset the value
-document.form1.name.value = "";
+    // Clear the form input field
+    document.forms.cert.yourName.value = '';
 
 }
-
